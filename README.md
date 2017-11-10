@@ -22,3 +22,10 @@
 
 - Hit this endpoint to see a list of most recently submited searches 
 api/latest/imagesearch 
+
+#Created with
+- Express
+- Mongoose
+- MLab
+- Dotenv
+- Google Search API 
