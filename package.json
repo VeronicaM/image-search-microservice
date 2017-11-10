@@ -2,7 +2,9 @@
   "name": "fcc-learn-npm-package-json",
   "dependencies": {
     "dotenv": "^4.0.0",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "google-images": "^2.1.0",
+    "request": "^2.83.0"
   },
   "main": "server.js",
   "scripts": {
