@@ -1,6 +1,6 @@
 # Image Search Microservice 
 
-- Hit this endpoint /imagesearch/your search term to get a list of images in the following format :
+- Hit this endpoint api/imagesearch/your search term to get a list of images in the following format :
 ```json
 [
   {
@@ -18,7 +18,7 @@
 ]
 ```
 
-- Add the offset parameter to paginate the result. Usage example : /imagesearch/your search term ?offset=2  
+- Add the offset parameter to paginate the result. Usage example : api/imagesearch/your search term ?offset=2  
 
 - Hit this endpoint to see a list of most recently submited searches 
-/latest/imagesearch 
+api/latest/imagesearch 
