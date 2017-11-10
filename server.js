@@ -4,11 +4,19 @@
   * ***************************************************/
 
  'use strict';
-
+ require('dotenv').config();
  var fs = require('fs');
  var express = require('express');
  var app = express();
- require('dotenv').config();
+ var mongoose = require('mongoose');
+ var config = require('./config.js');
+
+ mongoose.connect(config.mongo.uri, config.mongo.options);
+ mongoose.connection.on('error', function(err) {
+     console.error('MongoDB connection error: ' + err);
+     process.exit(-1);
+ });
+
  if (!process.env.DISABLE_XORIGIN) {
      app.use(function(req, res, next) {
          var allowedOrigins = ['https://narrow-plane.gomix.me', 'https://www.freecodecamp.com'];
