@@ -23,7 +23,7 @@
 - Hit this endpoint to see a list of most recently submited searches 
 api/latest/imagesearch 
 
-#Created with
+# Created with
 - Express
 - Mongoose
 - MLab
